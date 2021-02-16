@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+ *{
+     margin: 0;
+     padding: 0;
+     
+ }
+ body{
+     background-color: rgba(211, 206, 206, 0.959);
+     color: white;
+}
+
+.calendar{
+    height: 440px;
+    width: 364px;
+    margin:50px auto;
+    background-color:rgb(224, 91, 109);
+    border:3px solid white;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+     
+}
+.year{
+    height: 25px;
+    width: auto;
+    border-bottom:1px solid rgb(250, 253, 231); 
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family: 'Pacifico', cursive;
+}
+.month{
+    height: 25px;
+    width: auto;
+    border-bottom: 2px solid rgb(224, 91, 109) ;
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family: 'Pacifico', cursive;
+}
+
+.weekdays{
+    height: 25px;
+    width: auto;
+    display: flex;
+    align-content: flex-start;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 3px;
+}
+.weekdays div{
+    width: 50px;
+    height: 26px;
+    border: 1px solid rgb(196, 122, 112) ;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+}
+.dates{
+    height: 70%;
+    width: auto;
+    border-bottom:1px solid rgb(196, 122, 112); 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    position: relative;
+}
+
+button{
+    height: 15px;
+    width: 50px;
+    margin:0 5px;
+    font-size: 8px;
+    z-index: 2;
+    background-color: rgb(240, 147, 158);
+    border:1px solid rgb(196, 122, 112);
+    color:rgb(250, 253, 231);
+    border-radius: 5px;  
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(250, 253, 231);
+    color: rgba(175, 66, 84, 0.952);
+    border: 1px solid rgb(196, 122, 112) ;
+    border-radius: 0px;
+    position: relative;
+
+    
+}
+.box span{
+    margin-left: 3px;
+}
+.weekend{
+    background-color: rgb(240, 147, 158);
+    color: rgb(250, 253, 231);
+}
+.othermonth{
+    background-color:  rgba(250, 149, 159, 0.041);    
+}
+
+.choisedDay{
+    background-color: rgb(180, 229, 241);
+    color: rgb(223, 71, 71);
+}
