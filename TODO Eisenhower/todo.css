@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    margin:0; 
+    background-color:rgb(226, 204, 178) ;
+}
+p{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background-color:rgb(226, 204, 178) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} 
+header >h1{
+    margin-left:44% ;
+    font-family: 'Pangolin', cursive;
+    padding: 0;
+    color: rgb(18, 38, 77);
+}
+header>img{
+    height: 60px;
+    width: 60px;
+}
+
+ .main{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+#todo{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:18px ;
+    border: 0.5px solid papayawhip;
+    border-radius: 5px;
+    background-color: rgb(236, 218, 138);
+  
+}
+#logoTodo{
+    margin: 0 auto;
+    padding: 0;
+    width: 23.3vh;
+    height: 23.3vh;
+}
+.form{
+    height: 100%;
+    width: 33vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-bottom: 0.46vh;
+    color:rgb(126, 65, 55);
+    font-family: 'Pangolin', cursive;
+    font-size: 3.1vh;
+}
+.form div{
+    padding: 0.46vh;
+    margin: 0.3vh;
+}
+#addTask{
+    height: 10%;
+    width: inherit;
+    background-color: rgba(236, 85, 85, 0.788);
+    border:rgba(236, 85, 85, 0.788) ;
+    border-radius: 5px;
+    color: rgba(250, 227, 185, 0.774); 
+    font-weight: bold;
+    font-family: 'Pangolin', cursive;
+    font-size: 3vh;
+}
+#addTask:hover{
+   opacity: 0.8;
+   cursor: pointer;
+}
+#addTask:active{
+    opacity: 1;
+}
+label{
+    font-family: 'Pangolin', cursive;
+    margin-left: 0.46vh;
+}
+input {
+    width:95%;
+    padding-left: 0.46vh;
+    margin-top: 2.3vh;
+    border-radius: 0.8vh;
+    display: block;
+    font-family: 'Pangolin', cursive;
+    font-size: 3.1vh;
+    background-color: rgb(241, 237, 232);
+}
+
+#taskCategory{
+    width: 98%;
+    font-family: 'Pangolin', cursive;
+    font-size: 2.7vh;
+    background-color: rgb(241, 237, 232);
+    border-radius: 5px;
+}
+#timerInput{
+    font-family: 'Pangolin', cursive;
+    font-size: 3.87vh;
+    background-color: rgb(241, 237, 232);
+}
+.hours{
+    width:50%;
+    padding-left: 48%;
+    border-radius: 5px;
+}
+.min{
+    width:50%;
+    padding-left: 48%;
+    border-radius: 5px;
+}
+table{
+    border-spacing: 18px;
+}
+.taskArea{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    border-radius: 5px;
+    border: 0.5px solid papayawhip;
+    position: relative;
+}
+
+#important_urgently{
+    grid-area:important_urgently;
+    background-color:rgba(235, 157, 157, 0.671);
+    
+}
+#important_not_urgently{
+    grid-area:important_not_urgently;
+    background-color:rgba(235, 157, 193, 0.671);
+    
+}
+#not_important_urgently{
+    grid-area:not_important_urgently;
+    background-color:rgba(157, 235, 180, 0.671);
+     
+}
+#not_important_not_urgently{
+    grid-area:not_important_not_urgently;
+    background-color:rgba(157, 184, 235, 0.671);
+   
+}
+.title{
+    height: 4.65vh;
+    width: auto;
+    color:rgb(53, 130, 175);
+    padding-top: 0.46vh;
+    margin-bottom: 0.46vh;
+    font-family: 'Pangolin', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.5vh;
+    position: relative;
+}
+.bks{
+    min-height: 30vh; 
+    width: 35vw;
+    border-radius: 5px;
+    background-color:papayawhip;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 200px;
+    overflow-y:auto;
+    overflow-x:auto;
+    position: relative;
+    margin: 1vh;
+     
+}
+.task{
+    max-height: 20vh;
+    min-width: 98%;
+    border: 2px solid papayawhip;
+    background-color:rgba(250, 227, 185, 0.774);
+    border-radius: 5px;
+    color:rgb(182, 115, 115);
+    margin: 1px 0;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    font-family: 'Pangolin', cursive;
+      
+}
+
+.task:hover,.remove:hover, .complete:hover, .delete:hover{
+    opacity: 0.7;
+    cursor: pointer;
+     
+}
+.taskText{
+    max-height:70% ;
+}
+.task-control{   
+    display: flex;
+    flex-direction:row;
+    align-content:space-between;
+    justify-content:space-between;
+    
+}
+.task-control > p{
+    margin: 0;
+    padding: 0 0.8vh 0 0;
+}
+.btns-block{
+    max-height: 5.43vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin-top: 1.08vh;
+    padding: 0;
+     
+}
+ol{
+    padding: 0;
+    list-style: none;
+}
+.btns{
+    width: 5.43vh;
+    padding: 0 ;
+    border: 1px solid rgb(194, 171, 171);
+    border-top-left-radius: 5px;  
+    border-top-right-radius: 5px;   
+    border-bottom-right-radius: 5px;    
+    font-size: 10px;   
+}
+.complete{
+    background-color: rgba(140, 206, 140, 0.829);
+    color: rgb(99, 99, 99);
+}
+ 
+ .delete{
+    background-color: rgba(236, 85, 85, 0.788);
+    color: rgb(235, 230, 230);
+
+}
+.remove{
+    background-color: rgba(236, 233, 85, 0.788);
+    color: rgb(99, 99, 99);
+}
+.task > p{
+    margin: 5px;
+    padding: 0;
+    font-size: 14px;
+}
+img{
+    width: 10px;
+    height: 10px;
+    padding-top: 2px;
+}
+
+.completedTask{
+    background: rgb(130, 235, 165) ;
+    text-decoration:line-through;
+}
+.expiredTask{
+    background-color: rgb(231, 161, 149);
+    color: whitesmoke;
+}
+table{
+    height: 10px;
+    text-align: center;
+    font-size: 2.5vh;
+    font-family: 'Pangolin', cursive;
+    color: rgba(23, 29, 41, 0.699);
+}
+ 
+#footer{
+    grid-area:footer;
+    background-color:rgb(248, 247, 195) ;
+    border: 3px solid rgb(248, 247, 195);
+}

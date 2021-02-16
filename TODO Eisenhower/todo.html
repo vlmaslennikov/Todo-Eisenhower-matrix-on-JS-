@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="./todo.css">
+      
+    <script defer src="./todo.js"></script>
+</head>
+<body>
+    <header >
+       <h1>Eisenhower matrix </h1> 
+       <img src="https://cdn.icon-icons.com/icons2/609/PNG/512/professor_icon-icons.com_56337.png" alt="Eisenhower">
+    </header>
+    <div class="main">
+        <div id='todo'>
+            <button id="addTask" >Add task</button>
+            <form class="form">
+                <img id="logoTodo"  src="https://cdn.icon-icons.com/icons2/2633/PNG/512/office_board_clipboard_tasks_list_to_do_icon_159184.png" alt="">
+                
+                    <div>
+                        <label >Todo:</label>
+                        <input type="text" minlength="1" maxlength="100"  id="input">  
+                    </div>
+                        <div>
+                            <label >Category:</label>
+                            <select id="taskCategory">
+                                <option value="taskBlock1" selected>important & urgently</option>
+                                <option value="taskBlock2">important & not urgently</option>
+                                <option value="taskBlock3">not important & urgently</option>
+                                <option value="taskBlock4">not important & not urgently</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label >Timer:</label>
+                            <select   id="timerInput">
+                                <option value="1" selected>Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Hours:</label>
+                            <input class="hours" type="number" min='0' max="23" step="1" id="hours">
+                            <label>Min:</label>
+                            <input  class="min" type="number" min='0' max="59" step="1"  id="minutes">
+                        </div>
+            </form>
+            
+        </div>
+        <div class="categoryBlock">
+            <table>
+                <tr>
+                    <td>
+                        <div class="taskArea" id='important_urgently'>
+                            <p class="title">Important & Urgently : </p>
+                            <table>
+                                <tr>
+                                    <th class="tabFont1"> All tasks </th>    
+                                    <th class="tabFont2"> Completed tasks </th>
+                                    <th class="tabFont3"> Expired tasks </th>
+                                </tr>
+                                <tr>
+                                    <td class="countAllTasks tabFont1"> 0 </td>
+                                    <td class="countCompletedTask tabFont2">  0 </td>
+                                    <td class="countExpiredTask tabFont3">  0 </td>
+                                </tr>
+                            </table> 
+                            <ol class="bks" id= "taskBlock1"></ol>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="taskArea"  id='important_not_urgently'>
+                            <p class="title">Important & Not Urgently : </p>
+                            <table>
+                                <tr>
+                                    <th> All tasks </th>
+                                    <th> Completed tasks </th>
+                                    <th> Expired tasks </th>
+                                </tr>
+                                <tr>
+                                    <td class="countAllTasks"> 0 </td>
+                                    <td class="countCompletedTask">  0 </td>
+                                    <td class="countExpiredTask">  0 </td>
+                                </tr>
+                            </table> 
+                            <ol class="bks" id= "taskBlock2"></ol> 
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="taskArea" id='not_important_urgently'>
+                            <p class="title">Not Important & Urgently : </p>
+                            <table>
+                                <tr>
+                                    <th> All tasks </th>
+                                    <th> Completed tasks </th>
+                                    <th> Expired tasks </th>
+                                </tr>
+                                <tr>
+                                    <td class="countAllTasks"> 0 </td>
+                                    <td class="countCompletedTask">  0 </td>
+                                    <td class="countExpiredTask">  0 </td>
+                                </tr>
+                            </table>  
+                            <ol class="bks" id= "taskBlock3"></ol> 
+                        </div>
+                    </td>
+                    <td>
+                        <div class="taskArea" id='not_important_not_urgently'>
+                            <p class="title">Not Important & Not Urgently : </p>
+                            <table>
+                                <tr>
+                                    <th> All tasks </th>
+                                    <th> Completed tasks </th>
+                                    <th> Expired tasks </th>
+                                </tr>
+                                <tr>
+                                    <td class="countAllTasks"> 0 </td>
+                                    <td class="countCompletedTask">  0 </td>
+                                    <td class="countExpiredTask">  0 </td>
+                                </tr>
+                            </table> 
+                            <ol class="bks" id= "taskBlock4"></ol> 
+                        </div>
+                    </div>
+                    
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <footer>  </footer>
+    
+</body>
+</html>
