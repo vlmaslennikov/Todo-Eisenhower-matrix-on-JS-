@@ -21,7 +21,6 @@ for(let el of bksElements ){
 function addSelected(event){
     if(event.target.tagName=="LI"){
     event.target.classList.add('selected');};
-    console.log(event.target)
 }
 function removeSelected(event){
     event.target.classList.remove('selected');
@@ -52,8 +51,6 @@ function trasportInBlocks(event){
             
         let indexOfCurrentElement=Array.from(this.children).indexOf(currentElement);
         let indexOfActiveElement=Array.from(this.children).indexOf(activeElement);
-        console.log('indexOfCurrentElement'+indexOfCurrentElement);
-        console.log('indexOfActiveElement'+indexOfActiveElement);
         let nextElement;
         if(indexOfCurrentElement > indexOfActiveElement){
             nextElement=currentElement.nextElementSibling;
